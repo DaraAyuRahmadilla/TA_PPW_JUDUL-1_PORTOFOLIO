@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dara Ayu Rahmadilla — Portofolio Akademik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .section {
+      min-height: 100vh;
+      padding: 100px 0;
+      transition: opacity 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <div class="logo-dot"></div>
+        <div class="brand-text">
+          <span class="brand-name">Dara Ayu</span>
+          <small class="brand-sub">Portofolio Akademik</small>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div id="home" class="hero container">
+      <div class="hero-left">
+        <h5 class="eyebrow">Hello — I’m</h5>
+        <h1 class="hero-title">Dara Ayu Rahmadilla</h1>
+        <p class="hero-role">Mahasiswi Sistem Informasi • Konsentrasi Rekayasa Perangkat Lunak (RPL)</p>
+        <p class="hero-desc">
+          Saya tertarik pada pengembangan aplikasi dan desain antarmuka. Portofolio ini
+          mendokumentasikan proyek akademik, mock-up UI/UX, serta sertifikat pelatihan yang saya ikuti.
+        </p>
+
+        <div class="hero-actions">
+          <a href="cv/Dara_Ayu_Rahmadilla_CV.pdf" class="btn primary" download>Download CV</a>
+          <a href="#projects" class="btn ghost">Lihat Proyek</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>Universitas</strong><span>Universitas Lampung</span></div>
+          <div><strong>Sejak</strong><span>2023</span></div>
+          <div><strong>Organisasi</strong><span>HIMATRO</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-glow">
+          <img src="dara.jpg" alt="Foto Dara" class="avatar">
+          <svg class="avatar-ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#7b3ff3"/>
+                <stop offset="1" stop-color="#3dd1ff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="92" stroke="url(#g1)" stroke-width="6" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <main>
+    <section id="about" class="section container hidden">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p class="muted">Ringkasan singkat latar belakang, minat, dan fokus studi.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya adalah mahasiswi Program Studi <strong>Sistem Informasi</strong> di <strong>Universitas Lampung</strong> (angkatan 2023) dengan konsentrasi pada
+            <strong>Rekayasa Perangkat Lunak (RPL)</strong>. Selama studi saya fokus mempelajari siklus pembuatan perangkat lunak,
+            mulai dari analisis kebutuhan, desain antarmuka pengguna (UI/UX), pengembangan front-end, hingga integrasi backend.
+          </p>
+
+          <p>
+            Ketertarikan saya terletak pada merancang antarmuka yang intuitif serta mengimplementasikannya menjadi aplikasi web yang
+            dapat meningkatkan efisiensi proses akademik dan komunitas. Saya terbiasa bekerja kolaboratif dalam tim dan aktif
+            mengasah keterampilan melalui tugas kuliah, project kelompok, dan desain mock-up.
+          </p>
+
+          <p>
+            Tools &amp; teknologi yang sering saya gunakan meliputi: <strong>HTML, CSS, JavaScript, Figma, Git, MySQL, Laravel (konsep)</strong>.
+            Saya juga menaruh perhatian pada praktik dokumentasi dan manajemen versi agar proyek terstruktur dan mudah dikembangkan.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <h4>Focus</h4>
+            <p>UI/UX • Web Development • System Design</p>
+          </div>
+
+          <div class="stat">
+            <h4>Organization</h4>
+            <p>HIMATRO — aktif dalam kegiatan & kolaborasi antar jurusan</p>
+          </div>
+
+          <div class="stat">
+            <h4>Soft Skills</h4>
+            <p>Komunikasi • Kepemimpinan • Problem Solving</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- EDUCATION & EXPERIENCE -->
+<section id="education" class="section alt hidden">
+  <div class="container">
+    <div class="section-head">
+      <h2>Education & Experience</h2>
+      <p class="muted">Detail pendidikan dan pengalaman organisasi yang relevan.</p>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Universitas Lampung</h3>
+        <p class="edu-sub">Program Studi Sistem Informasi — 2023 • Konsentrasi RPL</p>
+        <p>
+          Selama menempuh pendidikan, saya memfokuskan studi pada pengembangan perangkat lunak dan integrasi sistem informasi.
+          Mata kuliah yang menonjol meliputi Rekayasa Perangkat Lunak, Basis Data, Pemrograman Web, dan Sistem Informasi Manajemen.
+          Saya berperan aktif dalam proyek kelompok yang melibatkan analisis kebutuhan, perancangan UI, dan implementasi sederhana.
+        </p>
+      </div>
+
+      <div class="exp-card">
+        <h3>HIMATRO — Himpunan Mahasiswa Teknik Elektro</h3>
+        <p class="edu-sub">Anggota aktif • Kegiatan teknis & kolaborasi</p>
+        <p>
+          Di HIMATRO, saya berperan dalam perencanaan acara, koordinasi tim, dan pelaksanaan workshop teknologi. Keterlibatan ini
+          memperkuat kemampuan manajemen proyek, komunikasi lintas tim, dan penerapan solusi teknologi untuk kebutuhan organisasi.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section container hidden">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <p class="muted">Gabungan proyek coding & desain mock-up yang relevan dengan studi.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <figure class="proj-media">
+        <img src="web.png" alt="Website Portofolio Pribadi preview">
+      </figure>
+      <div class="proj-body">
+        <h3>Website Portofolio Pribadi</h3>
+        <p>Implementasi HTML &amp; CSS sebagai tugas mata kuliah. Fokus pada struktur, aksesibilitas, dan dokumentasi file.</p>
+        <p class="meta"><strong>Teknologi:</strong> HTML, CSS • <strong>Type:</strong> Implementasi</p>
+        <div class="proj-actions">
+          <a href="https://github.com/DaraAyuRahmadilla/TA_PPW_JUDUL-1_PORTOFOLIO" target="_blank" rel="noopener">Lihat GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <figure class="proj-media">
+        <img src="donsal.png" alt="DONSAL mockup preview">
+      </figure>
+      <div class="proj-body">
+        <h3>DONSAL — Aplikasi Donasi Sosial</h3>
+        <p>Mock-up Figma untuk platform donasi sosial: alur donasi, halaman kampanye, dan dashboard admin.</p>
+        <p class="meta"><strong>Tools:</strong> Figma • <strong>Type:</strong> Mock-up</p>
+        <div class="proj-actions">
+          <a href="https://www.figma.com/design/lX84XyWiHZcWjngvEOemCn/DONSAL---APLIKASI-DONASI-SOSIAL" target="_blank" rel="noopener">Buka Figma</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <figure class="proj-media">
+        <img src="bahasaku.png" alt="BAHASAKU mockup preview">
+      </figure>
+      <div class="proj-body">
+        <h3>BAHASAKU — Aplikasi Bahasa & Budaya Lokal</h3>
+        <p>Desain interaktif untuk edukasi bahasa lokal: kuis, modul pembelajaran, dan mekanisme kontribusi pengguna.</p>
+        <p class="meta"><strong>Tools:</strong> Figma • <strong>Type:</strong> Mock-up</p>
+        <div class="proj-actions">
+          <a href="https://www.figma.com/design/UUgV3zlEzQyFB7cDTM8DDl/BAHASAKU-APLIKASI-BAHASA-BUDAYA-LOKAL" target="_blank" rel="noopener">Buka Figma</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section alt hidden">
+  <div class="container">
+    <div class="section-head">
+      <h2>Certificates</h2>
+      <p class="muted">Dokumentasi sertifikat pelatihan dan partisipasi</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-thumb">📄</div>
+        <h4>Cisco Networking Academy</h4>
+        <p>Pelatihan dasar jaringan komputer dan keamanan siber — Cisco Networking Academy.</p>
+        <a href="certificates/Dara Ayu Rahmadilla_Sertifikat Cisco.pdf" target="_blank" rel="noopener" class="cert-link">Lihat Sertifikat</a>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-thumb">📜</div>
+        <h4>Sertifikat Partisipasi</h4>
+        <p>Partisipasi aktif dalam workshop / seminar teknologi informasi.</p>
+        <a href="certificates/SERTIFIKAT_PESERTADara Ayu Rahmadilla.pdf" target="_blank" rel="noopener" class="cert-link">Lihat Sertifikat</a>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-thumb">🎓</div>
+        <h4>Pelatihan Minat & Bakat</h4>
+        <p>Pelatihan pengembangan minat dan bakat pada bidang teknologi dan desain.</p>
+        <a href="certificates/Sertifikat Pelatihan Minat dan Bakat Dara Ayu Rahmadilla.pdf" target="_blank" rel="noopener" class="cert-link">Lihat Sertifikat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container hidden">
+  <div class="section-head">
+    <h2>Contact</h2>
+    <p class="muted">Mari terhubung — saya terbSuka untuk kolaborasi akademik dan proyek</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h4>Email</h4>
+      <p><a href="mailto:daraayurd@gmail.com">daraayurd@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h4>GitHub</h4>
+      <p><a href="https://github.com/DaraAyuRahmadilla" target="_blank" rel="noopener">github.com/DaraAyuRahmadilla</a></p>
+    </div>
+    <div class="contact-card">
+      <h4>LinkedIn</h4>
+      <p><a href="https://www.linkedin.com/in/dara-ayu-rahmadilla-991aa2293" target="_blank" rel="noopener">linkedin.com/in/dara-ayu-rahmadilla-991aa2293</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>Designed &amp; Developed by <strong>Dara Ayu Rahmadilla</strong> — © 2025</p>
+    <p class="small">
+      Repo: <a href="https://github.com/DaraAyuRahmadilla" target="_blank" rel="noopener">
+      github.com/DaraAyuRahmadilla</a>
+    </p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("main section");
+  const links = document.querySelectorAll(".nav-links a");
+  const hero = document.getElementById("home");
+  sections.forEach(sec => sec.classList.add("hidden"));
+  hero.classList.remove("hidden");
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      sections.forEach(sec => sec.classList.add("hidden"));
+      hero.classList.add("hidden");
+
+      if (targetId === "home") {
+        hero.classList.remove("hidden");
+      } else {
+        const target = document.getElementById(targetId);
+        if (target) target.classList.remove("hidden");
+      }
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+</body>
+</html>
